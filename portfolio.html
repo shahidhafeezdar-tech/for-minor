@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            color: #222;
+        }
+
+        header {
+            background:#2b6123;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #1e3a8a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            color: #172554;
+        }
+
+        .hero p {
+            margin: 15px;
+            font-size: 18px;
+        }
+
+        button {
+            background: red;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skills div {
+            background: rgb(241, 227, 65);
+            padding: 20px;
+            width: 130px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+        
+        .contacts {
+            background: rgb(118, 209, 240);
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 450px;
+            border-radius: 8px;
+        }
+
+         .about {
+            background: rgb(178, 178, 208);
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 450px;
+            border-radius: 8px;
+        }
+
+        .project {
+            background: rgb(239, 213, 213);
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 450px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #2b6123;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>MY PORTFOLIO!</h2>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+    <h1>HELLO, I'm SHAHID!</h1>
+    <p>I'm a BCA Student & Beginner Web Developer.</p>
+    <button onclick="showMessage()">HIRE ME</button>
+</div>
+
+<section id="abouts">
+   <button style="background-color: rgb(22, 5, 105);"><h2>About Me!</h2></button>
+   <div class="about"> 
+    <p>
+       Hey! I'm <b></b>SHAHID HAFEEZ</b>, a passionate <strong>BCA</strong> student currently pursuing My 2<sup>nd</sup> year at <strong>Government Degree College Baramulla</strong>.
+<br>
+ Aspiring Web Developer  <br>
+
+ Exploring the world of Web Development. <br>
+
+ Learning HTML, CSS, JavaScript,C Programming & DSA. <br>
+
+ Building projects, learning new skills, and turning ideas into <br>
+
+Always curious,Always learning,Always growing!
+    </p></div>
+</section>
+
+<section id="skills">
+    <button style="background-color: antiquewhite; color: black;"><h2>My Skills</h2></button>
+
+    <div class="skills">
+       <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
+        <div>C Programming</div>
+         <div>DSA</div>
+    </div>
+</section>
+
+<section id="projects">
+    <button style="background-color: aquamarine;color: black;"><h2>My Projects</h2></button>
+
+    <div class="project">
+        <h3>Profile Card</h3>
+        <p>A simple profile Card using HTML and CSS.</p>
+    </div>
+
+</section>
+
+<section id="contact">
+    <button style="background-color: red;"><h2>Contact Me!!</h2> </button>
+   <div class="contacts"> 
+    <p><b><strong>Email:</strong></b> shahidhafeezdar@gmail.com</p>
+    <p><b><strong>Whatsapp:</strong></b> +919103050536</p> 
+</div>
+</section>
+
+<footer>
+    <p>My Portfolio`<sup>2026</sup></p>
+</footer>
+
+<script>
+    function showMessage() {
+        alert("Thank you for visiting my portfolio!");
+    }
+</script>
+
+</body>
+</html>
