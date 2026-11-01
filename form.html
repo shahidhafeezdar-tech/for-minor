@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+    body {
+        margin: 0;
+        min-height: 100vh;
+        background-image: url("https://cdn.pixabay.com/photo/2019/10/02/04/40/registration-4519979_1280.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
+</head>
+<body>
+<CEnter>
+    <h2 style="color: blue;">REGISTRATION FORM!</h2>
+
+    <form action="#" method="post" style="border:2px solid red;">
+
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname" placeholder="your Name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"  placeholder="abc@gmail.com" required><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password"  placeholder="strong password" required><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone"  placeholder="1234567" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" name="dob"><br><br>
+
+        <label>Address:</label><br>
+        <textarea name="address" rows="2" cols="18"></textarea><br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+    </form>
+</CEnter>
+</body>
+</html>

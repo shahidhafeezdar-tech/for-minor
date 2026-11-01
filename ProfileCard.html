@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profile Card</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #0d0f12;
+    font-family: "Inter", system-ui, sans-serif;
+    color: #fff;
+  }
+
+  .card {
+    width: 380px;
+    max-width: 90vw;
+    padding: 22px 28px 28px;
+    border-radius: 28px;
+    border: 1px solid rgba(150,160,230,.35);
+    background:
+      radial-gradient(circle at 50% 38%, rgba(70,90,200,.55), transparent 55%),
+      linear-gradient(180deg, #1b2036 0%, #54ddecf1 45%, #022732 100%);
+    box-shadow: 0 30px 80px rgba(71, 83, 47, 0.45);
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .avatar-wrap {
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 28px;
+    padding: 6px;
+    border-radius: 50%;
+    border: 2px solid rgba(150,130,230,.7);
+  }
+  .avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 64px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #182ebce4 0%, #0ed15fc8 50%, #8ecb839a 100%);
+    box-shadow: 0 0 40px rgba(234, 83, 214, 0.45);
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .role {
+    text-align: center;
+    margin-top: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(255,255,255,.85);
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: rgba(223, 50, 50, 0.673);
+    margin: 28px 0 22px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 14px;
+    font-size: 16px;
+  }
+  .label { color: rgba(255,255,255,.65); }
+  .value { font-weight: 800; }
+
+  .tag {
+    margin-top: 26px;
+    text-align: center;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 20px;
+    font-weight: 500;
+    color: #a99bff;
+  }
+  .tag b { color: #38d6e8; font-weight: 500; }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-8px); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .card { animation: none; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    
+
+    <div class="avatar-wrap"><div class="avatar">S</div></div>
+
+    <h1 style="color: black;">SHAHID</h1>
+    <p class="role">Creative Developer</p>
+
+    <hr>
+    <CEnter><strong><b><h3 style="color: rgb(91, 52, 52);">BCA STUDENT</h3></b></strong></CEnter>
+    <hr>
+
+    <div class="row"><span class="label">Currently learning</span><span class="value">Web Development</span></div>
+    <div class="row"><span class="label">Focus</span><span class="value">Design + Code</span></div>
+
+    <div class="tag"><b>&lt;</b>create<b>/&gt;</b></div>
+  </div>
+
+</body>
+</html>
